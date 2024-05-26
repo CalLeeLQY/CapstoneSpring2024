@@ -1,0 +1,102 @@
+
+
+/* 隐藏类，用于初始隐藏元素 */
+.hidden {
+    display: none;
+}
+
+/* 问题区块样式 */
+.question {
+    margin-top: 20px;
+}
+
+
+#registerButton {
+    margin-top: 20px; /* 设置按钮与上方元素的间距 */
+}
+
+
+.questionnaire {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+.question {
+    margin-bottom: 20px;
+}
+.question p {
+    margin-bottom: 10px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+}
+.input-container input {
+    flex-grow: 1;
+    padding: 10px;
+    margin: 0 10px;
+}
+.back, .next, #submit {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+.back {
+    position: absolute;
+    left: 200px;
+}
+.next {
+    position: absolute;
+    right: 200px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 使容器占满整个视窗高度 */
+    text-align: center;
+}
+
+#intro h1 {
+    margin-bottom: 20px; /* 调整标题与段落之间的间距 */
+}
+
+#intro p {
+    max-width: 600px; /* 控制段落的最大宽度以提高可读性 */
+    margin-bottom: 20px; /* 调整段落与按钮之间的间距 */
+}
+
+#intro .actions {
+    display: flex;
+    justify-content: center;
+}
+
+#intro .start.button {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.loading-gif {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+.register-tooltip {
+    margin-left: 10px;
+    font-size: 14px;
+    color: rgb(233, 151, 151); /* Adjust the color as needed */
+    background-color: #f9f9f9; /* Background color for the tooltip */
+    border: 1px solid #ccc; /* Border for the tooltip */
+    padding: 5px; /* Padding for the tooltip text */
+    border-radius: 3px; /* Rounded corners */
+    display: inline-block;
+    /* Optionally, add shadow for better visibility */
+    box-shadow: 0 0 10px rgba(211, 42, 42, 0.1);
+}

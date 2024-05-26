@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Website</title>
+        <link rel="stylesheet" href="../static/index.css">
+        <!-- 添加Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+
+<body>
+    <header>
+        <a href="/home" class="login-link">Login</a>
+    </header>
+    <main>
+        <div class="intro">
+            <p>Discover More About Our Services</p>
+            <button id="startButton">Start</button>
+        </div>
+        <div class="questionnaire hidden">
+            <div id="question1" class="question">
+                <p>What is your brand name?</p>
+                <input type="text" id="brandName">
+                <button class="next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div id="question2" class="question hidden">
+                <p>What is your user profile?</p>
+                <input type="text" id="userProfile">
+                <button class="back"><i class="fas fa-arrow-left"></i></button>
+                <button class="next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div id="question3" class="question hidden">
+                <p>What is your product?</p>
+                <input type="text" id="product">
+                <button class="back"><i class="fas fa-arrow-left"></i></button>
+                <button id="submit">Submit</button>
+            </div>            
+        </div>
+        <!-- 加载动画 -->
+        <div id="loading" class="hidden">
+            <div class="loader"></div> <!-- 新增的旋转动画容器 -->
+        </div>
+        <p id="response"></p>
+        <button id="registerButton" class="hidden">Register</button>
+    </main>
+    <script src="../static/index.js"></script>
+</body>
+</html>

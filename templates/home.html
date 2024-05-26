@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../static/home.css">
+    <link rel="stylesheet" href="../static/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body >
+    <div id="upbody">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li id="allfiles"><a href="#">All Files</a></li>
+                <li><a href="#">learn</a></li>
+                <li><a href="/profile">profile</a></li>
+            </ul>
+        </nav>
+        <button id="openSidebarBtn"><i class="fas fa-bars"></i></button>
+    </header>
+    <img src="../static/c1.jpg" alt="Banner Image" style="width: 1200px; height: 300px; display: block; margin: 20px auto;">
+    </div>
+
+    <main id="mainContent">
+        <h1>What will you create today?</h1>
+        <div class="create">
+            <div class="create-options">
+                <button id="twitterOption" class="option"><span class="icon"><i class="fab fa-twitter"></i></span> Twitter ads</button>
+                <button id="instagramOption" class="option"><span class="icon"><i class="fab fa-instagram"></i></span> Instagram ads</button>
+                <button id="tiktokOption" class="option"><span class="icon"><i class="fab fa-tiktok"></i></span> TikTok ads</button>
+                <button id="facebookOption" class="option"><span class="icon"><i class="fab fa-facebook"></i></span> Facebook ads</button>
+                <button id="youtubeOption" class="option"><span class="icon"><i class="fab fa-youtube"></i></span> YouTube ads</button>
+            </div>
+            <div class="create-options-2">
+                <button id="blogsOption" class="option-2"><span class="icon">✍</span> Blogs</button>
+                <button id="emailsOption" class="option-2"><span class="icon">📧</span> Emails</button>
+                <button id="messagesOption" class="option-2"><span class="icon">📨</span> Messages</button>
+            
+            </div>
+        </div>
+       
+        
+
+    </main>
+    <h1>Learn how to create better content</h1>
+    <div class="video-container">
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/3MwMII8n1qM" frameborder="0" allowfullscreen></iframe>
+            <div class="content">
+                <h3>How to create a blog post</h3>
+                <a href="https://www.youtube.com/watch?v=3MwMII8n1qM" target="_blank" class="play-button"><i class="fas fa-play"></i> Play</a>
+                <span class="duration">2 mins</span>
+            </div>
+        </div>
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/3MwMII8n1qM" frameborder="0" allowfullscreen></iframe>
+            <div class="content">
+                <h3>How to create a campaign</h3>
+                <a href="https://www.youtube.com/watch?v=3MwMII8n1qM" target="_blank" class="play-button"><i class="fas fa-play"></i> Play</a>
+                <span class="duration">3 mins</span>
+            </div>
+        </div>
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/3MwMII8n1qM" frameborder="0" allowfullscreen></iframe>
+            <div class="content">
+                <h3>How to Create a Marketing Calendar</h3>
+                <a href="https://www.youtube.com/watch?v=3MwMII8n1qM" target="_blank" class="play-button"><i class="fas fa-play"></i> Play</a>
+                <span class="duration">3 mins</span>
+            </div>
+        </div>
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/3MwMII8n1qM" frameborder="0" allowfullscreen></iframe>
+            <div class="content">
+                <h3>How to Conduct an SEO Analysis</h3>
+                <a href="https://www.youtube.com/watch?v=3MwMII8n1qM" target="_blank" class="play-button"><i class="fas fa-play"></i> Play</a>
+                <span class="duration">1 min</span>
+            </div>
+        </div>
+    </div>
+    <aside id="sidebar" style="display: none;">
+        <button id="closeSidebarBtn" style="position: absolute; right: 10px; top: 10px;">◀</button> <!-- 侧边栏内部的关闭按钮 -->
+        <div class="sidebar-content">
+            <!-- 侧边栏内容 -->
+            <div id="sidebar-head">
+                What I create
+            </div>
+            <div id="creations-container">
+                <!-- 创作内容将在这里动态加载 -->
+            </div>
+        </div>
+    </aside>
+
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModalBtn">&times;</button>
+            <div class="container">
+                <h1 id="modalTitle"></h1>
+                <form id="captionForm">
+                    <label for="postAbout" id="postAboutask">What is your post about?</label>
+                    <textarea id="postAbout" name="postAbout" placeholder="Best clothing stores in Los Angeles" maxlength="2000"></textarea>
+
+                    <label for="targetAudience">Target audience</label>
+                    <select id="targetAudience" name="targetAudience">
+                        <option value="Everyone">Everyone</option>
+                        <option value="Shoppers">Shoppers</option>
+                        <option value="College Students">College Students</option>
+                        <option value="New Parents">New Parents</option>
+                        <option value="Fitness Enthusiasts">Fitness Enthusiasts</option>
+                        <option value="Small Business Owners">Small Business Owners</option>
+                        <option value="Seniors">Seniors</option>
+                        <option value="Pet Owners">Pet Owners</option>
+                    </select>
+
+                    <label for="toneOfVoice">Tone of voice</label>
+                    <select id="toneOfVoice" name="toneOfVoice">
+                        <option value="Professional">Professional</option>
+                        <option value="Childish">Childish</option>
+                        <option value="Luxurious">Luxurious</option>
+                        <option value="Friendly">Friendly</option>
+                        <option value="Confident">Confident</option>
+                        <option value="Exciting">Exciting</option>
+                        <option value="Engaging">Engaging</option>
+                    </select>
+
+                    <label for="language">Language</label>
+                    <select id="language" name="language">
+                        <option value="English">English</option>
+                        <option value="简体中文">简体中文</option>
+                    </select>
+
+                    <div class="toggle-button">
+                        <label>Add hashtag</label>
+                        <div class="switch">
+                            <input type="checkbox" id="addHashtag" name="addHashtag">
+                            <span class="slider round"></span>
+                        </div>
+                    </div>
+
+                    <div class="toggle-button">
+                        <label>Add emoji</label>
+                        <div class="switch">
+                            <input type="checkbox" id="addEmoji" name="addEmoji">
+                            <span class="slider round"></span>
+                        </div>
+                    </div>
+
+                    <button type="submit">Generate Caption</button>
+                </form>
+                <div id="loading" style="display: none;">
+                    <img src="../static/loading.gif" alt="Loading..." />
+                </div>
+            </div>
+            
+            <div id="resultContainer"  style="display:none;">
+                <div id="selectquestion">Which one is better</div>
+                <div class="result-container"> <!-- 包裹按钮的新容器 -->
+                    <button id="leftResult" class="resultBox">Left Option</button>
+                    <button id="rightResult" class="resultBox">Right Option</button>
+                </div>
+                <button onclick="copyText()" id="saveBtn" style="display:none;">save</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../static/home.js"></script>
+    <script src="../static/form.js"></script>
+</body>
+</html>

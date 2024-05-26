@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Studio</title>
+    <link rel="stylesheet" href="../static/textstudio.css">
+</head>
+<body>
+    <div class="container">
+        <div id="save">
+            <button id="saveBtn" >Save</button>
+            <button id="discardBtn" >Discard</button>
+        </div>
+
+        <div id="textContainer">
+            <div id="loading" style="display: none;">
+                <img src="../static/loading.gif" alt="Loading..." />
+            </div>
+            <p></p>
+        </div>
+        <div id="controls">
+            <div class="range-container">
+                <span class="range-label left-label">Casual Tone</span>
+                <input type="range" id="toneValue" min="1" max="4" value="2" step="1">
+                <span class="range-label right-label">Professional Tone</span>
+            </div>
+            <input type="text" id="keywordInput" placeholder="Keyword">
+            <input type="text" id="otherInput" placeholder="Other input">
+        </div>
+        <button id="renewBtn">refine</button>
+    </div>
+    <script src="../static/textstudio.js"></script>
+</body>
+</html>

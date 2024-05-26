@@ -1,0 +1,113 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%; /* 从80%增加到90% */
+    max-width: 1500px; /* 从600px增加到900px，为更大屏幕提供更多空间 */
+    background: #fff;
+    padding: 80px; /* 增加内边距使内容更宽敞 */
+    border-radius: 10px; /* 稍微增加圆角 */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#save {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px; /* 增加底部间隙 */
+}
+
+#textContainer {
+    width: 100%;
+    margin-bottom: 30px; /* 增加底部间隙 */
+    padding: 30px; /* 增加内边距以适应更多文本 */
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* #controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.range-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px; /* 根据需要调整间距 */
+}
+
+.range-label {
+    margin: 0 10px; /* 在标签和滑动条之间提供空间 */
+    white-space: nowrap; /* 确保文本不换行 */
+}
+
+.left-label {
+    flex-grow: 0;
+    text-align: right;
+    width: 30%; /* 调整标签宽度，确保文本能完整显示 */
+}
+
+.right-label {
+    flex-grow: 0;
+    text-align: left;
+    width: 30%;
+}
+
+input[type="range"] {
+    flex-grow: 1; /* 滑动条占据剩余空间 */
+}
+
+input[type="text"] {
+    width: 80%; /* 或根据布局需求调整 */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+button {
+    padding: 15px 30px; /* 增加填充使按钮更显著 */
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#loading {
+    display: none; /* Initially hidden */
+    text-align: center;
+}
+
+#loading img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement Editor</title>
+    <link rel="stylesheet" href="/static/generated_caption.css">
+    
+</head>
+<body>
+    <div id="responseWrapper">
+        <div id="selectquestion">Which one is better</div>
+        <div id="resultContainer">
+            <input type="text" id="hiddenInput" style="display: none;">
+            <div id="leftResult" class="resultBox">{{leftbox}}</div>
+            <div id="rightResult" class="resultBox">{{rightbox}}</div>
+        </div>
+        <div id="inputWrapper" class="hidden">
+            <textarea id="continueInput" placeholder="Amend the text based on your input..."></textarea>
+            <button id="continueBtn">Submit</button>
+            <button  onclick="copyText()" id="saveBtn">save</button>
+        </div>
+    </div>
+    <script src="/static/generated_caption.js"></script>
+</body>
+</html>

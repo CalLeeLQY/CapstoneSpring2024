@@ -1,0 +1,117 @@
+/* 全局设置 */
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* 平滑滚动 */
+}
+
+/* 头部样式 */
+header {
+    text-align: right;
+    padding: 10px;
+}
+
+/* 登录链接样式 */
+.login-link {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease-in-out; /* 颜色过渡效果 */
+}
+
+.login-link:hover {
+    color: #0056b3; /* 鼠标悬停时的颜色变化 */
+}
+
+/* 主体内容样式 */
+.intro, .questionnaire {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* 隐藏类，用于初始隐藏元素 */
+.hidden {
+    display: none;
+}
+
+/* 问题区块样式 */
+.question {
+    margin-top: 20px;
+}
+
+/* 按钮通用样式 */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #007BFF; /* 蓝色背景 */
+    color: white; /* 文字颜色 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+    transition: all 0.3s; /* 过渡动画 */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 将子元素居中对齐 */
+}
+
+#registerButton {
+    margin-top: 20px; /* 设置按钮与上方元素的间距 */
+}
+
+
+button:hover {
+    background-color: #0056b3; /* 悬停背景色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 悬停时的阴影效果 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .intro, .questionnaire {
+        padding-top: 30px; /* 移动设备上减小上填充 */
+    }
+
+    button {
+        padding: 8px 16px; /* 移动设备上的按钮大小调整 */
+    }
+
+    header {
+        padding: 8px; /* 移动设备上头部填充调整 */
+    }
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loading {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* 默认隐藏 */
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    min-width: 100px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
